@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+h1 {
+    text-align: center;
+    color: #ff3e3e; 
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 8px; 
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    flex: 1; 
+}
+
+button#btn-search {
+    padding: 8px 15px;
+    background-color: #ff3e3e; 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pokedex-container {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto', sans-serif; 
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 20px; 
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pokedex-container::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+
+h2#pokemon-name {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+img#pokemon-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+p#pokemon-type,
+p#pokemon-number,
+p#pokemon-height,
+p#pokemon-weight,
+p#pokemon-stats {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+button#btn-switch {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block; 
+    margin-top: 10px;
+}

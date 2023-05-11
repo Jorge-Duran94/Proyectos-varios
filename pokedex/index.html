@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pokebola.png" type="image/x-icon">
+    <title>Pokedex JS</title>
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <div class="search-container">
+        <label for="search">Buscar Pokemon</label>
+        <input type="text" id="search" autocomplete="off">
+        <button id="btn-search">Buscar</button>
+    </div>
+    
+    <div class="pokedex-container" id="pokedex">
+        <h2 id="pokemon-name">Pokemon</h2> 
+        <img src="pokebola.png" alt="" id="pokemon-image"> 
+        <p id="pokemon-type">Tipo: </p> 
+        <p id="pokemon-number">Número: </p> 
+        <p id="pokemon-height">Altura: </p> 
+        <p id="pokemon-weight">Peso: </p> 
+        <p id="pokemon-stats"> </p>
+
+    </div>
+
+    <button id="btn-switch">Normal/Shiny</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
